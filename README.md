@@ -3,5 +3,5 @@ The Healthy Tracker is a software system designed to help users monitor their He
 
 
 Links
--https://github.com/BrandonMurimi/Healthy-Tracker/blob/main/README.md
-- [Architecture Document](ARCHITECTURE.md)
+-
+- 
