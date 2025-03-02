@@ -8,12 +8,9 @@ View health data for a specific user.
 
 Calculate totals (steps, heart rate, calories burned) across all users.
 
-How to Use
-Clone the repository:
+ Uses Clone the repository:
 
-bash
-
-git clone https://github.com/yourusername/health-tracker.git
+bash (insert the link)
 cd health-tracker
 Run the program:
 
@@ -44,7 +41,6 @@ add_data(): Adds health data for a user.
 view_data(): Retrieves health data for a specific user.
 
 calculate_totals(): Calculates totals across all users.
-
 
 
 Links
