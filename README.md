@@ -1,99 +1,49 @@
-Health Tracker System
-This is a simple health tracking system implemented in Rust. The system allows you to track health data (steps, heart rate, and calories burned) for multiple users and provides functionality to view individual user data and calculate totals across all users.
+**Health Tracker System**
+A simple Rust program to track health data (steps, heart rate, and calories burned) for multiple users.
 
 Features
-Add Health Data: Add health data (steps, heart rate, and calories burned) for a specific user.
+Add health data for users.
 
-View Health Data: View the health data for a specific user.
+View health data for a specific user.
 
-Calculate Totals: Calculate the total steps, heart rate, and calories burned across all users.
+Calculate totals (steps, heart rate, calories burned) across all users.
 
-Usage
+How to Use
 Clone the repository:
 
 bash
 
+git clone https://github.com/yourusername/health-tracker.git
 cd health-tracker
 Run the program:
 
 bash
 
 cargo run
-Add Health Data:
+The program will:
 
-rust
-tracker.add_data("Alice", 5000, 80, 300);
-tracker.add_data("Bob", 7000, 90, 450);
-tracker.add_data("Charlie", 3000, 75, 200);
-View Health Data:
+Add health data for three users: Alice, Bob, and Charlie.
 
-rust
+Display Alice's health data.
 
-if let Some(data) = tracker.view_data("Alice") {
-    println!("Alice's Health Data: {:?}", data);
-} else {
-    println!("User not found.");
-}
-Calculate Totals:
+Calculate and print the totals for all users.
+**
+**Example Output**
+**
+Alice's Health Data: HealthData { steps: 5000, heart_rate: 80, calories_burned: 300 }
+Totals - Steps: 15000, Heart Rate: 245, Calories Burned: 950
+Code Overview
+HealthData Struct: Stores steps, heart rate, and calories burned.
 
-rust
+HealthTracker Struct: Manages health data for multiple users using a HashMap.
 
-let (total_steps, total_heart_rate, total_calories_burned) = tracker.calculate_totals();
-println!(
-    "Totals - Steps: {}, Heart Rate: {}, Calories Burned: {}",
-    total_steps, total_heart_rate, total_calories_burned
-);
-Code Structure
-HealthData Struct: Represents the health data for a user, including steps, heart rate, and calories burned.
-
-HealthTracker Struct: Manages a collection of health data for multiple users using a HashMap.
-
-HealthTracker Implementation:
-
-new(): Initializes a new HealthTracker.
+Functions:
 
 add_data(): Adds health data for a user.
 
 view_data(): Retrieves health data for a specific user.
 
-calculate_totals(): Calculates the total steps, heart rate, and calories burned across all users.
-
-Example
-rust
-fn main() {
-    let mut tracker = HealthTracker::new();
-
-    // Add health data for users
-    tracker.add_data("Alice", 5000, 80, 300);
-    tracker.add_data("Bob", 7000, 90, 450);
-    tracker.add_data("Charlie", 3000, 75, 200);
-
-    // View health data for a specific user
-    if let Some(data) = tracker.view_data("Alice") {
-        println!("Alice's Health Data: {:?}", data);
-    } else {
-        println!("User not found.");
-    }
-
-    // Calculate and display totals
-    let (total_steps, total_heart_rate, total_calories_burned) = tracker.calculate_totals();
-    println!(
-        "Totals - Steps: {}, Heart Rate: {}, Calories Burned: {}",
-        total_steps, total_heart_rate, total_calories_burned
-    );
-}
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-Fork the repository.
-
-Create a new branch (git checkout -b feature/YourFeatureName).
-
-Commit your changes (git commit -m 'Add some feature').
-
-Push to the branch (git push origin feature/YourFeatureName).
-
-Open a Pull Request.
+calculate_totals(): Calculates totals across all users.
 
 
 
