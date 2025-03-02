@@ -13,7 +13,6 @@ Clone the repository:
 
 bash
 
-git clone https://github.com/yourusername/health-tracker.git
 cd health-tracker
 Run the program:
 
@@ -23,7 +22,6 @@ cargo run
 Add Health Data:
 
 rust
-Copy
 tracker.add_data("Alice", 5000, 80, 300);
 tracker.add_data("Bob", 7000, 90, 450);
 tracker.add_data("Charlie", 3000, 75, 200);
