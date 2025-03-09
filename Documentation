@@ -1,0 +1,110 @@
+1. Stakeholder Analysis
+Stakeholder	               Role                                                                         	Key Concerns	                                                                Pain Points	                                                                                  Success Metrics
+End Users	               -  Individuals or organizations tracking health data.	                      - Accurate tracking of health metrics (steps, heart rate, calories burned).	      - Lack of a simple, lightweight system for tracking health data.                            	- 90% user satisfaction with the system's ease of use and accuracy.
+Developers               -  Engineers building and maintaining the system.	                          - Easy-to-maintain codebase with clear documentation.                            	- Lack of modularity in existing systems, making updates difficult.                         	- 100% adherence to coding standards and documentation completeness.
+System Administrators     -	IT staff responsible for deploying and managing the system.	              - Easy deployment and monitoring of the system.                                   - Complex deployment processes in existing systems.                                         	- Deployment time reduced by 50%.
+Health Researchers        -	Researchers analyzing aggregated health data.	                            - Access to accurate and aggregated health metrics for analysis.	                - Lack of a centralized system for collecting and analyzing health data.	                    - 100% accuracy in aggregated health data.
+Product Managers	        - Oversee the development and alignment of the system with business goals.	- System meets user needs and is delivered on time and within budget.	            - Misalignment between user needs and system capabilities.	                                  - 100% of functional requirements delivered within the project timeline.
+Security Auditors        -	Ensure the system complies with security standards.                      	- User data is secure and complies with privacy regulations.	                    - Lack of encryption and secure data handling in existing systems.	                          - 100% compliance with AES-256 encryption and GDPR/other privacy regulati
+
+2. Functional Requirements
+
+Add Health Data
+
+The system shall allow users to add health data (steps, heart rate, calories burned) for a specific user.
+
+Acceptance Criteria: Data is stored in an in-memory HashMap and can be retrieved without errors.
+
+View Health Data
+
+The system shall allow users to view health data for a specific user.
+
+Acceptance Criteria: Health data is displayed in a readable format (e.g., HealthData { steps: 5000, heart_rate: 80, calories_burned: 300 }).
+
+Calculate Totals
+
+The system shall calculate and display the total steps, heart rate, and calories burned across all users.
+
+Acceptance Criteria: Totals are computed accurately and displayed in real time.
+
+User Authentication
+
+The system shall allow users to authenticate before accessing health data.
+
+Acceptance Criteria: Only authenticated users can add, view, or calculate health data.
+
+Data Persistence
+
+The system shall persist health data to a database (e.g., SQLite or PostgreSQL).
+
+Acceptance Criteria: Data is retrievable after system restart.
+
+Search Health Data
+
+The system shall allow users to search for health data by user name.
+
+Acceptance Criteria: Search results display health data within 2 seconds.
+
+Export Health Data
+
+The system shall allow users to export health data to a CSV file.
+
+Acceptance Criteria: CSV file contains accurate and complete health data.
+
+Real-Time Notifications
+
+The system shall notify users when their health metrics exceed predefined thresholds.
+
+Acceptance Criteria: Notifications are delivered in real time via email or SMS.
+
+Multi-Platform Support
+
+The system shall support deployment on Windows, Linux, and macOS.
+
+Acceptance Criteria: The system runs without errors on all supported platforms.
+
+API Integration
+
+The system shall provide a REST API for integrating with third-party applications.
+
+Acceptance Criteria: API endpoints are documented and accessible via HTTP requests.
+
+3. Non-Functional Requirements
+Usability
+The system shall comply with WCAG 2.1 accessibility standards.
+
+The user interface shall be intuitive, with a maximum learning curve of 10 minutes for new users.
+
+Deployability
+The system shall be deployable on Windows, Linux, and macOS servers.
+
+The system shall support containerized deployment using Docker.
+
+Maintainability
+The codebase shall include inline comments and a comprehensive API guide for future integrations.
+
+The system shall have a modular design to facilitate updates and bug fixes.
+
+Scalability
+The system shall support 1,000 concurrent users during peak hours.
+
+The system shall handle up to 10,000 health data entries without performance degradation.
+
+Security
+All user data shall be encrypted using AES-256 encryption.
+
+The system shall comply with GDPR and other relevant privacy regulations.
+
+Performance
+Health data search results shall load within 2 seconds.
+
+The system shall process and store health data within 1 second of user input.
+
+4. Documentation & Clarity
+This document provides a clear and structured overview of the Health Tracker System's requirements. Each requirement is specific, unambiguous, and traceable to stakeholder needs. The document is organized into:
+
+Stakeholder Analysis: Identifies key stakeholders, their concerns, and success metrics.
+
+Functional Requirements: Defines system capabilities with acceptance criteria.
+
+Non-Functional Requirements: Categorizes quality attributes into usability, deployability, maintainability, scalability, security, and performance.
