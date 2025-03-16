@@ -1,7 +1,9 @@
 The use Case Diagram
 i used marmaid js to Draw the diagram
-The coded is below 
+The link of the picture
+![Screenshot 2025-03-16 205121](https://github.com/user-attachments/assets/310c3ff2-590e-462f-b51f-4721a1d149b4)
 
+The coded is below for the mermed diagram
 graph TD
     %% Actors
     User[User] -->|Tracks Fitness Data| TrackFitness
