@@ -1,0 +1,38 @@
+The use Case Diagram
+i used marmaid js to Draw the diagram
+The coded is below 
+
+graph TD
+    %% Actors
+    User[User] -->|Tracks Fitness Data| TrackFitness
+    User -->|Views Fitness Data| ViewFitness
+    User -->|Sets Fitness Goals| SetGoals
+    Admin[Admin] -->|Manages Users| ManageUsers
+    Admin -->|Generates Reports| GenerateReports
+    WearableDevice[Wearable Device] -->|Syncs Data| SyncData
+    System[System] -->|Sends Notifications| SendNotifications
+    System -->|Analyzes Trends| AnalyzeTrends
+
+    %% Use Cases
+    TrackFitness[Track Fitness Data] -->|Includes| SyncData
+    ViewFitness[View Fitness Data] -->|Extends| GenerateReports
+    SetGoals[Set Fitness Goals] -->|Depends on| ViewFitness
+    AnalyzeTrends[Analyze Trends] -->|Depends on| ViewFitness
+    ManageUsers[Manage Users] -->|Updates| System
+    GenerateReports[Generate Reports] -->|Uses| ViewFitness
+    SyncData[Sync Data] -->|Updates| TrackFitness
+    SendNotifications[Send Notifications] -->|Notifies| User
+
+    %% Styles
+    style User fill:#f9f,stroke:#333,stroke-width:2px
+    style Admin fill:#f9f,stroke:#333,stroke-width:2px
+    style WearableDevice fill:#f9f,stroke:#333,stroke-width:2px
+    style System fill:#bbf,stroke:#333,stroke-width:2px
+    style TrackFitness fill:#9f9,stroke:#333,stroke-width:2px
+    style ViewFitness fill:#9f9,stroke:#333,stroke-width:2px
+    style SetGoals fill:#9f9,stroke:#333,stroke-width:2px
+    style AnalyzeTrends fill:#9f9,stroke:#333,stroke-width:2px
+    style ManageUsers fill:#9f9,stroke:#333,stroke-width:2px
+    style GenerateReports fill:#9f9,stroke:#333,stroke-width:2px
+    style SyncData fill:#9f9,stroke:#333,stroke-width:2px
+    style SendNotifications fill:#9f9,stroke:#333,stroke-width:2px
