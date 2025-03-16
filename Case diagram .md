@@ -166,7 +166,6 @@ Include the explanation of actors, use cases, relationships, and stakeholder con
 
 
 
-
 Below is a test case table for the Health Tracker System to validate functional requirements and non-functional requirements. The table includes 8+ test cases and 2 non-functional test scenarios.
 
 Test Case Table
