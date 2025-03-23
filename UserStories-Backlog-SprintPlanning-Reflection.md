@@ -40,13 +40,16 @@ Justification for Prioritization
 Sprint Goal
 - **Goal**: Implement core functionality for tracking, viewing, and syncing fitness data to deliver the MVP.
 
-- | Story ID | User Story                                                                 | Priority (MoSCoW) | Effort Estimate (1–5) |
+| Story ID | User Story                                                                 | Priority (MoSCoW) | Effort Estimate (1–5) |
 |----------|----------------------------------------------------------------------------|-------------------|-----------------------|
 | US-001   | As a user, I want to track my daily steps so that I can monitor my activity. | Must-have         | 3                     |
 | US-002   | As a user, I want to view my fitness data so that I can track my progress.  | Must-have         | 2                     |
 | US-003   | As a user, I want to set fitness goals so that I can achieve my targets.    | Must-have         | 3                     |
 | US-004   | As a user, I want to sync data from my wearable device so that I can automatically track my fitness. | Must-have         | 4                     |
 | US-009   | As a system admin, I want user data encrypted with AES-256 so that security compliance is met. | Must-have         | 3                     |
+
+
+
 
 Sprint Backlog Table
 | Task ID | Task Description                          | Assigned To | Estimated Hours | Status (To Do/In Progress/Done) |
