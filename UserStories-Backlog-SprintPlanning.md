@@ -35,3 +35,40 @@ Justification for Prioritization
 - **Should-have**: Stories like generating reports (US-005) and managing users (US-006) enhance the system but are not essential for the MVP.
 - **Could-have**: Stories like analyzing trends (US-008) provide additional value but can be deferred to later sprints.
 - **Won’t-have**: No stories are classified as "Won’t-have" at this stage.
+
+3. Sprint Planning
+Sprint Goal
+- **Goal**: Implement core functionality for tracking, viewing, and syncing fitness data to deliver the MVP.
+
+- | Story ID | User Story                                                                 | Priority (MoSCoW) | Effort Estimate (1–5) |
+|----------|----------------------------------------------------------------------------|-------------------|-----------------------|
+| US-001   | As a user, I want to track my daily steps so that I can monitor my activity. | Must-have         | 3                     |
+| US-002   | As a user, I want to view my fitness data so that I can track my progress.  | Must-have         | 2                     |
+| US-003   | As a user, I want to set fitness goals so that I can achieve my targets.    | Must-have         | 3                     |
+| US-004   | As a user, I want to sync data from my wearable device so that I can automatically track my fitness. | Must-have         | 4                     |
+| US-009   | As a system admin, I want user data encrypted with AES-256 so that security compliance is met. | Must-have         | 3                     |
+
+Sprint Backlog Table
+| Task ID | Task Description                          | Assigned To | Estimated Hours | Status (To Do/In Progress/Done) |
+|---------|-------------------------------------------|-------------|------------------|----------------------------------|
+| T-001   | Develop API for tracking steps            | Dev Team    | 8                | To Do                            |
+| T-002   | Design UI for viewing fitness data        | UI Team     | 6                | To Do                            |
+| T-003   | Implement goal-setting functionality      | Dev Team    | 8                | To Do                            |
+| T-004   | Develop wearable device sync module       | Dev Team    | 10               | To Do                            |
+| T-005   | Implement AES-256 encryption for user data| Dev Team    | 6                | To Do                            |
+
+Sprint Goal Statement
+- The sprint focuses on delivering core functionality for tracking, viewing, and syncing fitness data, which is essential for the MVP. This aligns with stakeholder needs for usability and security.
+
+- 4. Documentation & Clarity
+Reflection
+
+**Challenges in Prioritization, Estimation, and Alignment**
+1. **Prioritization**:
+   - Balancing stakeholder needs with technical feasibility was challenging. For example, ensuring that security (US-009) and performance (US-010) were prioritized without delaying core functionality required careful consideration.
+
+2. **Estimation**:
+   - Estimating effort for tasks like syncing data (US-004) was difficult due to uncertainties in integrating with wearable device APIs.
+
+3. **Alignment with Stakeholder Needs**:
+   - Aligning user stories with stakeholder needs (e.g., tracking steps, setting goals) required iterative feedback and validation, especially since I am the sole stakeholder at this stage.
