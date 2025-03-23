@@ -66,7 +66,8 @@ Sprint Goal Statement
 - 4. Documentation & Clarity
 Reflection
 
-Reflection: Challenges in Prioritization, Estimation, and Aligning Agile with Stakeholder Needs
+**Challenges in Prioritization, Estimation, and Alignment**
+
 As the sole stakeholder for this project, I faced several challenges in translating requirements into actionable Agile artifacts, such as user stories, a prioritized backlog, and a sprint plan. These challenges stemmed from the need to balance technical feasibility, resource constraints, and my own expectations as the stakeholder. Below, I reflect on the key challenges I encountered and how I addressed them.
 
 1. Prioritization Challenges
