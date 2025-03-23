@@ -72,3 +72,4 @@ Reflection
 
 3. **Alignment with Stakeholder Needs**:
    - Aligning user stories with stakeholder needs (e.g., tracking steps, setting goals) required iterative feedback and validation, especially since I am the sole stakeholder at this stage.
+   - 
